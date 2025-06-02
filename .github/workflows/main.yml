@@ -1,0 +1,30 @@
+name: Fetch SPC Day 1 Outlook
+
+on:
+  schedule:
+    # Runs at the start of every hour - you can adjust this cron as needed
+    - cron: '0 * * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  fetch-outlook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Fetch SPC Day 1 Outlook JSON
+        run: |
+          curl -s -o spc-day1-outlook.json https://www.spc.noaa.gov/products/outlook/day1otlk.json
+
+      - name: Commit and push outlook data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add spc-day1-outlook.json
+          # Only commit if there are changes
+          git diff --cached --quiet || git commit -m "Update SPC Day 1 Outlook JSON"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
