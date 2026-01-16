@@ -244,11 +244,7 @@ January 01, 1970</td>
 
 <script type="text/javascript">
   if (typeof jQuery == 'undefined') {
-/*
-    document.write(unescape("%3Cscript async src='/misc/js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
-*/
-    document.write(unescape("%3Cscript async src='/misc/js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
-    document.write(unescape("%3Cscript async src='/misc/js/jquery-migrate-1.4.1.js' type='text/javascript'%3E%3C/script%3E"));
+    document.write(unescape("%3Cscript async src='/misc/js/jquery-3.7.1.min.js' type='text/javascript'%3E%3C/script%3E"));
   }
 </script>
 
