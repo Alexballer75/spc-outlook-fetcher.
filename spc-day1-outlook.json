@@ -92,7 +92,7 @@
 
 <!-- Left menu here-->
 <!--Use google lib for jquery -->
-<script type="text/javascript" src="/misc/js/jquery.min.js"></script>
+<script type="text/javascript" src="/misc/js/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="/misc/js/nwsexit-spc.js"></script>
 
 <table cellspacing="0" cellpadding="2" width="130" border="0">
@@ -244,7 +244,11 @@ January 01, 1970</td>
 
 <script type="text/javascript">
   if (typeof jQuery == 'undefined') {
+/*
     document.write(unescape("%3Cscript async src='/misc/js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+*/
+    document.write(unescape("%3Cscript async src='/misc/js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+    document.write(unescape("%3Cscript async src='/misc/js/jquery-migrate-1.4.1.js' type='text/javascript'%3E%3C/script%3E"));
   }
 </script>
 
