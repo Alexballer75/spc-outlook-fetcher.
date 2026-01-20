@@ -54,7 +54,7 @@
     <td class="nav" id="menuitem" align="center" width="15%">
       <a href="/sitemap.html">Site Map</a></td>
     <td class="nav" id="menuitem" align="right" width="15%">
-      <a href="//www.weather.gov/pa/">News</a></td>
+      <a href="//www.weather.gov/news/">News</a></td>
     <td class="nav" id="menuitem" align="right" width="20%">
       <a href="//www.weather.gov/organization.php">Organization</a></td>
     <td width="20%">&nbsp;</td>
@@ -114,7 +114,6 @@
               <hr width="80%"/>
               <span><a href="https://x.com/NWSSPC" target="_blank" title="NOAA NWS Storm Prediction Center X"><img src="/new/images/x.png" style="border: 0px;height: 25px;width: 25px;vertical-align: middle;" />@NWSSPC</a></span>
               <hr width="80%"/>
-              <span class="yellow"><a href="//www.ncep.noaa.gov/newsletter/" target="NCEP_Newsletter">NCEP Quarterly Newsletter</a></span>
             </div>
             <hr width="90%"/>
             <a href="/"><span class="yellow">Home</span></a>&nbsp;(<a href="/classic.html" target="_blank"><span class="yellow">Classic</span></a>)<br />
@@ -231,7 +230,7 @@ January 01, 1970</td>
       <td align="right">
         <a href="//www.weather.gov/privacy">
           <span class="gray">Privacy Policy</span></a><br />
-        <a href="//www.rdc.noaa.gov/%7Efoia/">
+        <a href="//www.foia.gov/">
           <span class="gray">Freedom of Information Act (FOIA)</span></a><br />
         <a href="//www.weather.gov/about">
           <span class="gray">About Us</span></a><br />
